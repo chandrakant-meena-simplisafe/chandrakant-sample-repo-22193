@@ -1,0 +1,10 @@
+name: Hello World
+
+on: [push]  # Trigger the workflow on push events (you can change this trigger)
+
+jobs:
+  hello:
+    runs-on: self-hosted  # Specify self-hosted runner
+    steps:
+      - name: Hello World
+        run: echo "Hello world"  # Print the message
